@@ -1,0 +1,33 @@
+{% include 'base.html' %} {% block content %}
+
+<div class="card">
+    <div class="card-header">
+        <div style="font-size: 25px; font-weight: 600; letter-spacing: 2px;"> {{ country.countryName|upper }}</div>
+    </div>
+    <div class="card-body">
+        <table id="example" class="table table-striped table-bordered dt-responsive nowrap">
+            <thead>
+                <tr>
+                    <th>RANK</th>
+                    <th>COUNTRY NAME</th>
+                    <th>LADDER SCORE</th>
+                    <th>HEALTH LIFE EXPECTANCY</th>
+                    <th>GENEROSITY</th>
+                    <th>GDP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ country.id }}</td>
+                    <td>{{ country.countryName }}</td>
+                    <td>{{ country.ladderScore }}</td>
+                    <td>{{ country.healthyLifeExpectancy }}</td>
+                    <td>{{ country.generosity }}</td>
+                    <td>{{ country.gdp }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

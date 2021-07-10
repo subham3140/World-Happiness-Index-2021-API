@@ -1,0 +1,13 @@
+.ladderdiv {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#ladderfrom {
+    margin-right: 3px;
+}
+
+#ladderto {
+    margin-left: 3px;
+}
